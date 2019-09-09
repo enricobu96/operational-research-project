@@ -1,0 +1,9 @@
+reset; # cancella dati memorizzati
+
+model candb.mod # carica il modello
+data candb.dat; # carica i dati
+
+option solver cplex; # scelta del motore di ottimizzazione
+solve; # risolve il modello
+
+display xL, xP; # visualizza il valore (ottimo) delle variabili

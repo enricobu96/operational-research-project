@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.20)  30 JUL 2019 16:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.20)  9 SEP 2019 18:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -144,120 +144,19 @@ Overfull \hbox (14.67554pt too wide) in paragraph at lines 9--11
  []
 
 
-! LaTeX Error: Environment LARGE undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.13 \begin{LARGE}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 ! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.14 \begin{center}
+l.12 \begin{center}
                    
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 14--14
-[] 
- []
-
-
-Overfull \hbox (44.06229pt too wide) in paragraph at lines 15--15
- \OT1/cmr/bx/n/10 Progetto 
- []
-
-
-Overfull \hbox (13.4166pt too wide) in paragraph at lines 15--15
- \OT1/cmr/bx/n/10 in- 
- []
-
-
-Overfull \hbox (13.57632pt too wide) in paragraph at lines 15--15
- \OT1/cmr/bx/n/10 te- 
- []
-
-
-Overfull \hbox (19.9096pt too wide) in paragraph at lines 15--15
- \OT1/cmr/bx/n/10 gra- 
- []
-
-
-Overfull \hbox (19.16656pt too wide) in paragraph at lines 15--15
- \OT1/cmr/bx/n/10 tivo 
- []
-
-
-Overfull \hbox (16.71521pt too wide) in paragraph at lines 15--15
- \OT1/cmr/bx/n/10 per 
- []
-
-
-Overfull \hbox (6.38885pt too wide) in paragraph at lines 15--15
- \OT1/cmr/bx/n/10 il 
- []
-
-
-Overfull \hbox (25.8832pt too wide) in paragraph at lines 15--15
- \OT1/cmr/bx/n/10 corso 
- []
-
-
-Overfull \hbox (9.58328pt too wide) in paragraph at lines 15--15
- \OT1/cmr/bx/n/10 di 
- []
-
-
-Overfull \hbox (37.63869pt too wide) in paragraph at lines 15--15
- \OT1/cmr/bx/n/10 Ricerca 
- []
-
-
-Overfull \hbox (18.86101pt too wide) in paragraph at lines 15--15
- \OT1/cmr/bx/n/10 Op- 
- []
-
-
-Overfull \hbox (13.84023pt too wide) in paragraph at lines 15--15
- \OT1/cmr/bx/n/10 er- 
- []
-
-
-Overfull \hbox (9.42354pt too wide) in paragraph at lines 15--15
- \OT1/cmr/bx/n/10 a- 
- []
-
-
-Overfull \hbox (18.68738pt too wide) in paragraph at lines 15--15
- \OT1/cmr/bx/n/10 tiva 
- []
-
-
-! LaTeX Error: \begin{document} ended by \end{LARGE}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.17 \end{LARGE}
-                
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 22--22
+Overfull \hbox (20.0pt too wide) in paragraph at lines 12--12
 [] 
  []
 
@@ -268,7 +167,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.23 \begin{vplace}
+l.13 \begin{vplace}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -281,45 +180,212 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.24 \begin{LARGE}
+l.14 \begin{LARGE}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (51.98026pt too wide) in paragraph at lines 25--25
- \OT1/cmr/bx/n/10 Universit^^Ra 
+Overfull \hbox (44.06229pt too wide) in paragraph at lines 16--16
+ \OT1/cmr/bx/n/10 Progetto 
  []
 
 
-Overfull \hbox (23.7985pt too wide) in paragraph at lines 25--25
- \OT1/cmr/bx/n/10 degli 
+Overfull \hbox (13.4166pt too wide) in paragraph at lines 16--16
+ \OT1/cmr/bx/n/10 in- 
  []
 
 
-Overfull \hbox (26.83319pt too wide) in paragraph at lines 25--25
- \OT1/cmr/bx/n/10 Studi 
+Overfull \hbox (13.57632pt too wide) in paragraph at lines 16--16
+ \OT1/cmr/bx/n/10 te- 
  []
 
 
-Overfull \hbox (9.58328pt too wide) in paragraph at lines 25--25
+Overfull \hbox (19.9096pt too wide) in paragraph at lines 16--16
+ \OT1/cmr/bx/n/10 gra- 
+ []
+
+
+Overfull \hbox (19.16656pt too wide) in paragraph at lines 16--16
+ \OT1/cmr/bx/n/10 tivo 
+ []
+
+
+Overfull \hbox (16.71521pt too wide) in paragraph at lines 16--16
+ \OT1/cmr/bx/n/10 per 
+ []
+
+
+Overfull \hbox (6.38885pt too wide) in paragraph at lines 16--16
+ \OT1/cmr/bx/n/10 il 
+ []
+
+
+Overfull \hbox (25.8832pt too wide) in paragraph at lines 16--16
+ \OT1/cmr/bx/n/10 corso 
+ []
+
+
+Overfull \hbox (9.58328pt too wide) in paragraph at lines 16--16
  \OT1/cmr/bx/n/10 di 
  []
 
 
-Overfull \hbox (35.97198pt too wide) in paragraph at lines 25--25
- \OT1/cmr/bx/n/10 Padova 
+Overfull \hbox (37.63869pt too wide) in paragraph at lines 16--16
+ []\OT1/cmr/bx/n/10 Ricerca 
  []
 
 
-! LaTeX Error: \begin{center} on input line 22 ended by \end{LARGE}.
+Overfull \hbox (18.86101pt too wide) in paragraph at lines 16--16
+ \OT1/cmr/bx/n/10 Op- 
+ []
+
+
+Overfull \hbox (13.84023pt too wide) in paragraph at lines 16--16
+ \OT1/cmr/bx/n/10 er- 
+ []
+
+
+Overfull \hbox (9.42354pt too wide) in paragraph at lines 16--16
+ \OT1/cmr/bx/n/10 a- 
+ []
+
+
+Overfull \hbox (18.68738pt too wide) in paragraph at lines 16--16
+ \OT1/cmr/bx/n/10 tiva 
+ []
+
+! Undefined control sequence.
+<recently read> \color 
+                       
+l.18 ... produzione per una ditta \\ di chitarre}}
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (59.63162pt too wide) in paragraph at lines 18--18
+ []\OT1/cmr/bx/n/10 MaroonMix 
+ []
+
+
+Overfull \hbox (14.05548pt too wide) in paragraph at lines 18--18
+ \OT1/cmr/bx/n/10 ot- 
+ []
+
+
+Overfull \hbox (22.99988pt too wide) in paragraph at lines 18--18
+ \OT1/cmr/bx/n/10 timo 
+ []
+
+
+Overfull \hbox (9.58328pt too wide) in paragraph at lines 18--18
+ \OT1/cmr/bx/n/10 di 
+ []
+
+
+Overfull \hbox (20.70824pt too wide) in paragraph at lines 18--18
+ \OT1/cmr/bx/n/10 pro- 
+ []
+
+
+Overfull \hbox (38.49286pt too wide) in paragraph at lines 18--18
+ \OT1/cmr/bx/n/10 duzione 
+ []
+
+
+Overfull \hbox (16.71521pt too wide) in paragraph at lines 18--18
+ \OT1/cmr/bx/n/10 per 
+ []
+
+
+Overfull \hbox (18.36794pt too wide) in paragraph at lines 18--18
+ \OT1/cmr/bx/n/10 una 
+ []
+
+
+Overfull \hbox (24.1179pt too wide) in paragraph at lines 18--18
+ \OT1/cmr/bx/n/10 ditta 
+ []
+
+
+Overfull \hbox (9.58328pt too wide) in paragraph at lines 18--18
+ []\OT1/cmr/bx/n/10 di 
+ []
+
+
+Overfull \hbox (18.20824pt too wide) in paragraph at lines 18--18
+ \OT1/cmr/bx/n/10 chi- 
+ []
+
+
+Overfull \hbox (24.80544pt too wide) in paragraph at lines 18--18
+ \OT1/cmr/bx/n/10 tarre 
+ []
+
+
+! LaTeX Error: \begin{center} on input line 12 ended by \end{LARGE}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.26 \end{LARGE}
+l.25 \end{LARGE}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment LARGE undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \begin{LARGE}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (51.98026pt too wide) in paragraph at lines 27--27
+ \OT1/cmr/bx/n/10 Universit^^Ra 
+ []
+
+
+Overfull \hbox (23.7985pt too wide) in paragraph at lines 27--27
+ \OT1/cmr/bx/n/10 degli 
+ []
+
+
+Overfull \hbox (26.83319pt too wide) in paragraph at lines 27--27
+ \OT1/cmr/bx/n/10 Studi 
+ []
+
+
+Overfull \hbox (9.58328pt too wide) in paragraph at lines 27--27
+ \OT1/cmr/bx/n/10 di 
+ []
+
+
+Overfull \hbox (35.97198pt too wide) in paragraph at lines 27--27
+ \OT1/cmr/bx/n/10 Padova 
+ []
+
+
+! LaTeX Error: \begin{center} on input line 12 ended by \end{LARGE}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \end{LARGE}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -332,65 +398,65 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.31 \begin{Large}
+l.33 \begin{Large}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (68.09125pt too wide) in paragraph at lines 32--32
+Overfull \hbox (68.09125pt too wide) in paragraph at lines 34--34
  []\OT1/cmr/m/sc/10 Dipartimento 
  []
 
 
-Overfull \hbox (9.26663pt too wide) in paragraph at lines 32--32
+Overfull \hbox (9.26663pt too wide) in paragraph at lines 34--34
  \OT1/cmr/m/sc/10 di 
  []
 
 
-Overfull \hbox (38.0886pt too wide) in paragraph at lines 32--32
+Overfull \hbox (38.0886pt too wide) in paragraph at lines 34--34
  \OT1/cmr/m/sc/10 Matem- 
  []
 
 
-Overfull \hbox (15.15544pt too wide) in paragraph at lines 32--32
+Overfull \hbox (15.15544pt too wide) in paragraph at lines 34--34
  \OT1/cmr/m/sc/10 at- 
  []
 
 
-Overfull \hbox (15.06659pt too wide) in paragraph at lines 32--32
+Overfull \hbox (15.06659pt too wide) in paragraph at lines 34--34
  \OT1/cmr/m/sc/10 ica 
  []
 
 
-Overfull \hbox (28.43312pt too wide) in paragraph at lines 32--32
+Overfull \hbox (28.43312pt too wide) in paragraph at lines 34--34
  \OT1/cmr/m/sc/10 "Tul- 
  []
 
 
-Overfull \hbox (14.51103pt too wide) in paragraph at lines 32--32
+Overfull \hbox (14.51103pt too wide) in paragraph at lines 34--34
  \OT1/cmr/m/sc/10 lio 
  []
 
 
-Overfull \hbox (25.34427pt too wide) in paragraph at lines 32--32
+Overfull \hbox (25.34427pt too wide) in paragraph at lines 34--34
  \OT1/cmr/m/sc/10 Levi- 
  []
 
 
-Overfull \hbox (36.94418pt too wide) in paragraph at lines 32--32
+Overfull \hbox (36.94418pt too wide) in paragraph at lines 34--34
  \OT1/cmr/m/sc/10 Civita" 
  []
 
 
-! LaTeX Error: \begin{center} on input line 22 ended by \end{Large}.
+! LaTeX Error: \begin{center} on input line 12 ended by \end{Large}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 \end{Large}
+l.35 \end{Large}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -403,65 +469,65 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37 \begin{large}
+l.39 \begin{large}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (31.17206pt too wide) in paragraph at lines 38--38
+Overfull \hbox (31.17206pt too wide) in paragraph at lines 40--40
  []\OT1/cmr/m/sc/10 Corso 
  []
 
 
-Overfull \hbox (9.26663pt too wide) in paragraph at lines 38--38
+Overfull \hbox (9.26663pt too wide) in paragraph at lines 40--40
  \OT1/cmr/m/sc/10 di 
  []
 
 
-Overfull \hbox (22.65541pt too wide) in paragraph at lines 38--38
+Overfull \hbox (22.65541pt too wide) in paragraph at lines 40--40
  \OT1/cmr/m/sc/10 Lau- 
  []
 
 
-Overfull \hbox (17.73326pt too wide) in paragraph at lines 38--38
+Overfull \hbox (17.73326pt too wide) in paragraph at lines 40--40
  \OT1/cmr/m/sc/10 rea 
  []
 
 
-Overfull \hbox (9.15552pt too wide) in paragraph at lines 38--38
+Overfull \hbox (9.15552pt too wide) in paragraph at lines 40--40
  \OT1/cmr/m/sc/10 in 
  []
 
 
-Overfull \hbox (13.96655pt too wide) in paragraph at lines 38--38
+Overfull \hbox (13.96655pt too wide) in paragraph at lines 40--40
  \OT1/cmr/m/sc/10 In- 
  []
 
 
-Overfull \hbox (21.28879pt too wide) in paragraph at lines 38--38
+Overfull \hbox (21.28879pt too wide) in paragraph at lines 40--40
  \OT1/cmr/m/sc/10 for- 
  []
 
 
-Overfull \hbox (22.62207pt too wide) in paragraph at lines 38--38
+Overfull \hbox (22.62207pt too wide) in paragraph at lines 40--40
  \OT1/cmr/m/sc/10 mat- 
  []
 
 
-Overfull \hbox (15.06659pt too wide) in paragraph at lines 38--38
+Overfull \hbox (15.06659pt too wide) in paragraph at lines 40--40
  \OT1/cmr/m/sc/10 ica 
  []
 
 
-! LaTeX Error: \begin{center} on input line 22 ended by \end{large}.
+! LaTeX Error: \begin{center} on input line 12 ended by \end{large}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.39 \end{large}
+l.41 \end{large}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -474,7 +540,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.42 \begin{large}
+l.43 \begin{large}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -501,33 +567,33 @@ Missing character: There is no 6 in font nullfont!
 Missing character: There is no 4 in font nullfont!
 Missing character: There is no 4 in font nullfont!
 
-! LaTeX Error: \begin{center} on input line 22 ended by \end{large}.
+! LaTeX Error: \begin{center} on input line 12 ended by \end{large}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.45 \end{large}
+l.46 \end{large}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-! LaTeX Error: \begin{center} on input line 22 ended by \end{vplace}.
+! LaTeX Error: \begin{center} on input line 12 ended by \end{vplace}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.47 \end{vplace}
+l.48 \end{vplace}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (338.0pt too wide) in paragraph at lines 49--49
+Overfull \hbox (338.0pt too wide) in paragraph at lines 50--50
  []| 
  []
 
@@ -539,39 +605,39 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.53 \begin{normalsize}
+l.54 \begin{normalsize}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (26.76097pt too wide) in paragraph at lines 54--56
+Overfull \hbox (26.76097pt too wide) in paragraph at lines 55--57
  []\OT1/cmr/m/sc/10 Anno 
  []
 
 
-Overfull \hbox (17.53595pt too wide) in paragraph at lines 54--56
+Overfull \hbox (17.53595pt too wide) in paragraph at lines 55--57
  \OT1/cmr/m/sc/10 Ac- 
  []
 
 
-Overfull \hbox (15.82213pt too wide) in paragraph at lines 54--56
+Overfull \hbox (15.82213pt too wide) in paragraph at lines 55--57
  \OT1/cmr/m/sc/10 ca- 
  []
 
 
-Overfull \hbox (34.5776pt too wide) in paragraph at lines 54--56
+Overfull \hbox (34.5776pt too wide) in paragraph at lines 55--57
  \OT1/cmr/m/sc/10 demico 
  []
 
 
-Overfull \hbox (25.88864pt too wide) in paragraph at lines 54--56
+Overfull \hbox (25.88864pt too wide) in paragraph at lines 55--57
  \OT1/cmr/m/sc/10 2018- 
  []
 
 
-Overfull \hbox (22.1109pt too wide) in paragraph at lines 54--56
+Overfull \hbox (22.1109pt too wide) in paragraph at lines 55--57
  \OT1/cmr/m/sc/10 2019 
  []
 
@@ -582,7 +648,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.58 \end{titlepage}
+l.59 \end{titlepage}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -596,11 +662,11 @@ or  <return>  to continue without it.
 
  
 Here is how much of TeX's memory you used:
- 20 strings out of 492623
- 308 string characters out of 6135669
+ 21 strings out of 492623
+ 313 string characters out of 6135669
  59053 words of memory out of 5000000
- 4031 multiletter control sequences out of 15000+600000
+ 4032 multiletter control sequences out of 15000+600000
  4249 words of font info for 16 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 18i,1n,12p,101b,144s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 18i,1n,12p,116b,166s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

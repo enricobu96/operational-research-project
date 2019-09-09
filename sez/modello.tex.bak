@@ -56,4 +56,5 @@ Le \textbf{variabili decisionali} sono quindi le seguenti:
 Essendo questo un problema di tipo \textit{mix ottimo di produzione}, si richiede di massimizzare il guadagno complessivo per l'azienda andando a calcolare la corretta combinazione di tipologie di strumenti da produrre. Il modello è quindi:
 \begin{displaymath}
 max \overbrace{\sum_{i=1}^{6} \sum_{j\in J} (R_i x_{i,j})}^{Ricavo\ vendita\ strumenti} - \overbrace{\sum_{i=1}^{6} \sum_{j\in J} (C_i x_{i,j})}^{Costo\ strumenti} + \overbrace{\sum_{i=1}^{6} \sum_{j\in J}(G_i x_{i,j})}^{Guadagno\ da\ modifiche} \\
+s.t.
 \end{displaymath}
