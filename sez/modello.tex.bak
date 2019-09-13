@@ -39,7 +39,7 @@ Successivamente sono stati definiti i \textbf{parametri}, i quali sono:
 \item[] $Y_i$ = Numero di strumento di tipo \textit{i $\in$ I} da modificare; questo viene deciso a priori, quindi non fa parte delle variabili decisionali
 \item[] $M_i$ = Guadagno per l'azienda proveniente dalla modifica di uno strumento di tipo \textit{i $\in$ I}
 \item[] $CM_i$ = Costo all'azienda per la modifica dello strumento di tipo \textit{i $\in$ I}
-\item[] $ND_{k,i}$ = Numero di componenti di tipo \textit{k $\in$ K} disponibili per strumento di tipo \textit{i $\in$ I}
+\item[] $ND_{k,T}$ = Numero di componenti di tipo \textit{k $\in$ K} disponibili per strumento di tipo T, con T=C (chitarra) o B (basso)
 \item[] $NN_{k,i}$ = Numero di componenti di tipo \textit{k $\in$ K} necessarie per la costruzione di uno strumento di tipo \textit{i $\in$ I}
 \item[] $LM_j$ = Numero di ore di manodopera massime dello stabilimento \textit{j $\in$ J}
 \item[] $L_{i,j}$ = Numero di ore di manodopera necessarie per produrre uno strumento \textit{i $\in$ I} nello stabilimento \textit{j $\in$ J}
@@ -56,5 +56,4 @@ Le \textbf{variabili decisionali} sono quindi le seguenti:
 Essendo questo un problema di tipo \textit{mix ottimo di produzione}, si richiede di massimizzare il guadagno complessivo per l'azienda andando a calcolare la corretta combinazione di tipologie di strumenti da produrre. Il modello è quindi:
 \begin{displaymath}
 max \overbrace{\sum_{i=1}^{6} \sum_{j\in J} (R_i x_{i,j})}^{Ricavo\ vendita\ strumenti} - \overbrace{\sum_{i=1}^{6} \sum_{j\in J} (C_i x_{i,j})}^{Costo\ strumenti} + \overbrace{\sum_{i=1}^{6} \sum_{j\in J}(G_i x_{i,j})}^{Guadagno\ da\ modifiche} \\
-s.t.
 \end{displaymath}

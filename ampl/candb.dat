@@ -1,5 +1,97 @@
-# Dati del problema
+# Progetto di Ricerca Operativa
+# Anno Accademico 2018-2019
+# Buratto Enrico, 1142644
+# PRIMO SET DI DATI
 
-#INSIEMI
+#POPOLAMENTO DEGLI INSIEMI
+set I := 1 2 3 4 5 6;
+set J := A B C;
+set K := 1 2 3 4 5 6 7 8 9 10 11 12 13 14;
+set Tipi := C B;
+set Chitarre := 1 2 3 4;
+set ComponentiSpeciali := 11 12;
 
-#PARAMETRI
+
+#POPOLAMENTO VETTORI E MATRICI DI DATI
+
+#In ordine: [P] Prezzo, [Y] Numero di strumenti da modificare
+#[M] Guadagno modifica, [CM] Costo modifica
+#[LS] Manodopera modifica
+param: 	P		Y	M		CM		LS :=
+1		479		6	45		34		0.5
+2		469		7	41		33		0.9
+3		429		4	55		32		0.6
+4		849		5	49		39		0.4
+5		429		8	43		30		0.6
+6		439		8	42		29		0.5;
+
+
+#Manodopera disponibile
+param: LM :=
+A	   4000
+B	   5000
+C	   7000;
+
+
+#Componenti disponibili per [C]hitarra e [B]asso
+param ND: C		B :=
+1		6636	6834	
+2		1103	1231
+3		1071	1097
+4		1071	1097
+5		25000	23211
+6		8920	8135
+7		1003	1081
+8		2304	2202
+9		1106	1239
+10		3211	2207
+11		2000	2000
+12		3522	3633
+13		1240	1230
+14		1071	1097;
+
+
+#Componenti necessarie
+param NN: 1		2	3	4	5	6 :=
+1		6		6   6	18	4	5
+2		1		1   1	2	1	1
+3		1		1   1	2	1	1
+4		1		1   1	2	1	1
+5		23		21  22	44	19	21
+6		9		8   8	17	8	9
+7		1		1   1	2	1	1
+8		0		1   1	2	1	1
+9		2		1   1	4	1	1
+10		2		3   1	4	1	2
+11		1		1   1	2	1	1
+12		4		3   2	4	2	3
+13		1		1   1	1	1	1
+14		1		1   1	2	1	1;
+
+
+#Prezzo componenti
+param NP: 1		2		3		4		5		6 :=
+1		3.5		3.5		3.5		3.5		4.5		4.5
+2		2		2		2		2		2		2
+3		72		72		72		72		68		68
+4		16.5	16.5	16.5	16.5	15.3	15.3
+5		0.5		0.5		0.5		0.5		0.7		0.7
+6		0.95	0.95	0.95	0.95	1.05	1.05
+7		81		81		81		81		79		79
+8		8		8		8		8		7		7
+9		11		11		11		11		11		11
+10		42		42		42		42		47.5	47.5
+11		8		8		8		8		7		7
+12		16.5	16.5	16.5	16.5	15.2	15.2
+13		3		3		3		3		3		3
+14		24		24		24		24		28		28;
+
+
+#Manodopera necessaria per strumento i in stabilimento j
+param L: A	B	C :=
+1		3	4	6
+2		2.5	3.7	5.6
+3		2.8	4.1	6.2
+4		3.4	4.8	6.5
+5		2.8	3.6	5.7
+6		2.9	4	5.9;

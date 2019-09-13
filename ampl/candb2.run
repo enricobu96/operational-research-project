@@ -6,7 +6,7 @@
 reset; # cancella dati memorizzati
 
 model candb.mod # carica il modello
-data candb.dat; # carica i dati
+data candb2.dat; # carica i dati
 
 option solver cplex; # scelta del motore di ottimizzazione
 solve; # risolve il modello
@@ -15,28 +15,24 @@ solve; # risolve il modello
 printf "Risultati dell'esecuzione: \n";
 printf "STABILIMENTO A \n";
 for {i in I} {
-	printf "Strumento %i : %i", i, x[i,"A"];
+	printf "Strumento %i :", i;
+	display x[i, A];
 	printf "\n";
 }
 
 printf "STABILIMENTO B \n";
 for {i in I} {
-	printf "Strumento %i : %i", i, x[i, "B"];
+	printf "Strumento %i :", i;
+	display x[i, B];
 	printf "\n";
 }
 
 printf "STABILIMENTO C \n";
 for {i in I} {
-	printf "Strumento %i : %i", i, x[i, "C"];
+	printf "Strumento %i :", i;
+	display x[i, C];
 	printf "\n";
 }
-
-printf "Un po di debug \n";
-for {j in J} {
-	printf "Ore modifica stabilimento %i: %f \n", j, v[j];
-}
-printf "Modificati 1: %i \n" , y;
-printf "Modificati 2: %i \n", z;
 
 printf "Ricavo massimo azienda = ";
 display RicavoMassimo;
