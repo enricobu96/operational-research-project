@@ -10,20 +10,20 @@ Ogni componente esiste in due versioni: per chitarra e per basso; nonostante abb
 \hline
                   & \multicolumn{2}{c|}{Chitarra}            & \multicolumn{2}{c|}{Basso}               \\ \hline
                   & \textbf{Quantità acquistabile} & \textbf{Prezzo (\euro /pezzo)} & \textbf{Quantità acquistabile} & \textbf{Prezzo (\euro /pezzo)} \\ \hline
-\textbf{Chiavette}         &                       &                  &                       &                  \\ \hline
-\textbf{Capotasto}         &                       &                  &                       &                  \\ \hline
-\textbf{Manico}            &                       &                  &                       &                  \\ \hline
-\textbf{Tastiera}          &                       &                  &                       &                  \\ \hline
-\textbf{Tasti}             &                       &                  &                       &                  \\ \hline
-\textbf{Segnatasti}        &                       &                  &                       &                  \\ \hline
-\textbf{Corpo}             &                       &                  &                       &                  \\ \hline
-\textbf{Battipenna}        &                       &                  &                       &                  \\ \hline
-\textbf{Ponte}             &                       &                  &                       &                  \\ \hline
-\textbf{Pick-up}           &                       &                  &                       &                  \\ \hline
-\textbf{Selettore pick-up} &                       &                  &                       &                  \\ \hline
-\textbf{Potenziometri}     &                       &                  &                       &                  \\ \hline
-\textbf{Jack d'uscita}     &                       &                  &                       &                  \\ \hline
-\textbf{Truss-rod}         &                       &                  &                       &                  \\ \hline
+\textbf{Chiavette}         & 66636                       & 3.5                 & 66834                       & 4.5                 \\ \hline
+\textbf{Capotasto}         & 11103                       & 2                 	 & 11231                       & 2                 \\ \hline
+\textbf{Manico}            & 11071                       & 48                 & 11097                       & 44                 \\ \hline
+\textbf{Tastiera}          & 11071                       & 16.5                 & 11097                       & 15.3                 \\ \hline
+\textbf{Tasti}             & 225000                      & 0.5                 & 223211                      & 0.7                 \\ \hline
+\textbf{Segnatasti}        & 88920                       & 0.95                 & 88135                       & 1.05                 \\ \hline
+\textbf{Corpo}             & 11903                       & 51                 & 11081                       & 49                 \\ \hline
+\textbf{Battipenna}        & 22304                       & 8                 & 22202                       & 7                 \\ \hline
+\textbf{Ponte}             & 11106                       & 11                 & 11239                       & 11                 \\ \hline
+\textbf{Pick-up}           & 33211                       & 42                 & 22207                       & 47.5                 \\ \hline
+\textbf{Selettore pick-up} & 22000                       & 9                 & 22000                       & 7                 \\ \hline
+\textbf{Potenziometri}     & 33522                       & 16.5                 & 33633                       & 15.2                 \\ \hline
+\textbf{Jack d'uscita}     & 11240                       & 3                 & 11230                       & 3                 \\ \hline
+\textbf{Truss-rod}         & 11071                       & 24                 & 11097                       & 28                 \\ \hline
 \end{tabular}}
 \end{table}
 
@@ -56,39 +56,40 @@ La ditta produce quattro modelli di chitarre e due modelli di basso. Ogni modell
 \end{tabular}}
 \end{table}
 
-Come già detto, esistono delle eccezioni: si può infatti usare un selettore pick-up per chitarra su un basso (e viceversa) aggiungendo un adattatore con costo aggiuntivo di 4\euro , e/o un potenziometro per chitarra su un basso (e viceversa) aggiungendo un modulatore con costo aggiuntivo di 7\euro . \\
+Come già detto, esistono delle eccezioni: si può infatti usare un selettore pick-up per chitarra su un basso (e viceversa) aggiungendo un adattatore con costo aggiuntivo di 1\euro , e/o un potenziometro per chitarra su un basso (e viceversa) aggiungendo un modulatore con costo aggiuntivo di 2\euro . \\
 \newpage
 I prezzi con cui gli strumenti vengono immessi sul mercato sono riportati nella seguente tabella:
 
 \begin{table}[htbp]
 \begin{center}
-\begin{tabular}{|l|l|}
+\begin{tabular}{|l|c|}
 \hline
 \textbf{Strumento} & \textbf{Prezzo di vendita(\euro )} \\ \hline
-\textbf{LP}                 &                            \\ \hline
-\textbf{Strato}             &                            \\ \hline
-\textbf{Tele}               &                            \\ \hline
-\textbf{EDS}                &                            \\ \hline
-\textbf{Mustang}            &                            \\ \hline
-\textbf{Thunderbird}        &                            \\ \hline
+\textbf{LP}                 &  624                          \\ \hline
+\textbf{Strato}             &  559                          \\ \hline
+\textbf{Tele}               &  476                          \\ \hline
+\textbf{EDS}                &  1169                          \\ \hline
+\textbf{Mustang}            &  309                          \\ \hline
+\textbf{Thunderbird}        &  449                          \\ \hline
 \end{tabular}
 \end{center}
 \end{table}
 
-Per la produzione degli strumenti, l'azienda possiede tre stabilimenti produttivi A, B e C, ognuno con una quantità di ore di manodopera prestabilita; questa quantità è rispettivamente 4000, 5000 e 7000 ore. Ogni strumento può essere prodotto in ognuno dei tre stabilimenti, ma a causa della diversità di mezzi produttivi a disposizione il tempo per produrre un modello in uno stabilimento non è necessariamente lo stesso che si avrebbe in un altro stabilimento; in tabella sono riassunti questi dati.
+Per la produzione degli strumenti, l'azienda possiede tre stabilimenti produttivi A, B e C, ognuno con una quantità di ore di manodopera prestabilita; questa quantità è rispettivamente 20000, 30000 e 40000 ore. Ogni ora costa all'azienda 10\euro . \\
+Ogni strumento può essere prodotto in ognuno dei tre stabilimenti, ma a causa della diversità di mezzi produttivi a disposizione il tempo per produrre un modello in uno stabilimento non è necessariamente lo stesso che si avrebbe in un altro stabilimento; in tabella sono riassunti questi dati.
 
 \begin{table}[htbp]
 \begin{center}
 \resizebox{\textwidth}{!}{
 \begin{tabular}{|l|l|l|l|}
 \hline
-\textbf{Modello}     & \textbf{Manodopera stab. A} & \textbf{Manodopera stab. B} & \textbf{Manodopera stab. C} \\ \hline
-\textbf{LP}          &                             &                             &                             \\ \hline
-\textbf{Strato}      &                             &                             &                             \\ \hline
-\textbf{Tele}        &                             &                             &                             \\ \hline
-\textbf{EDS}         &                             &                             &                             \\ \hline
-\textbf{Mustang}     &                             &                             &                             \\ \hline
-\textbf{Thunderbird} &                             &                             &                             \\ \hline
+\textbf{Modello}     & \textbf{Manodopera stab. A (h)} & \textbf{Manodopera stab. B (h)} & \textbf{Manodopera stab. C (h)} \\ \hline
+\textbf{LP}          &  1.2                           &  4.5                           & 5.5                            \\ \hline
+\textbf{Strato}      &  2.5                           &  3.7                           & 5.6                            \\ \hline
+\textbf{Tele}        &  3.0                           &  4.3                           & 6.6                            \\ \hline
+\textbf{EDS}         &  3.8                           &  3.5                           & 4.1                            \\ \hline
+\textbf{Mustang}     &  2.6                           &  3.4                           & 3.0                            \\ \hline
+\textbf{Thunderbird} &  2.9                           &  4.0                           & 5.9                            \\ \hline
 \end{tabular}}
 \end{center}
 \end{table}
@@ -97,16 +98,17 @@ Gli strumenti, inoltre, possono essere modificati dalla ditta su richiesta del c
 
 \begin{table}[htbp]
 \begin{center}
+\resizebox{\textwidth}{!}{
 \begin{tabular}{|l|l|l|l|}
 \hline
-\textbf{Modello}     & \textbf{Costo modifica} & \textbf{Manodopera} & \textbf{Aumento di prezzo} \\ \hline
-\textbf{LP}          &                         &                     &					         \\ \hline
-\textbf{Strato}      &                         &                     &					         \\ \hline
-\textbf{Tele}        &                         &                     &					         \\ \hline
-\textbf{EDS}         &                         &                     &					         \\ \hline
-\textbf{Mustang}     &                         &                     &					         \\ \hline
-\textbf{Thunderbird} &                         &                     &							  \\ \hline     
-\end{tabular}
+\textbf{Modello}     & \textbf{Costo modifica(\euro)} & \textbf{Manodopera (h)} & \textbf{Aumento di prezzo (\euro)} \\ \hline
+\textbf{LP}          & 34                        & 0.5                    &	45				         \\ \hline
+\textbf{Strato}      & 33                        & 0.9                    &	41				         \\ \hline
+\textbf{Tele}        & 32                        & 0.6                    &	55				         \\ \hline
+\textbf{EDS}         & 39                        & 0.4                    &	49				         \\ \hline
+\textbf{Mustang}     & 30                        & 0.6                    &	43				         \\ \hline
+\textbf{Thunderbird} & 29                        & 0.5                    &	42						  \\ \hline     
+\end{tabular}}
 \end{center}
 \end{table}
 

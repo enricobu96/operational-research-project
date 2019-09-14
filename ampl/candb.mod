@@ -23,10 +23,10 @@ param LS{I}; #ore di manodopera necessarie per modificare strumento tipo i
 param ND{K, Tipi} integer; #numero di componenti tipo k DISPONIBILI per strumento tipo i
 param NN{K, I} integer; #numero di componenti tipo k NECESSARIE per strumento tipo i
 param NP{K, I}; #prezzo componente k per strumento i
-param C{i in I} := sum{k in K} NP[k,i]; #costo all'azienda degli strumenti di tipo i
+param C{i in I} := sum{k in K} (NP[k,i]*NN[k,i]); #costo all'azienda degli strumenti di tipo i
 param LM{J}; #numero ore di manodopera DISPONIBILI per stabilimento j
 param L{I, J}; #numero ore di manodopera NECESSARIE per produrre uno strumento i in stabilimento j
-
+param CostoManod; #costo manodopera all'ora
 
 #VARIABILI
 var x{I, J}>=0 integer; #numero strumenti di tipo i da produrre in stabilimento j
@@ -48,7 +48,10 @@ maximize RicavoMassimo:
 	(sum{i in I} sum{j in J} C[i]*x[i,j]) + #costo strumenti all'azienda
 	(sum{i in I} M[i]*Y[i]) - #guadagno da modifica strumenti
 	(sum{i in I} CM[i]*Y[i]) - #costo modifica strumenti all'azienda
-	(4*y) - (7*z); #eventuali scambi di componenti chitarra-basso
+	y - (2*z) - #eventuali scambi di componenti chitarra-basso
+	(sum{i in I} sum{j in J} L[i,j]*x[i,j])*CostoManod - #prezzo manodopera
+	(sum{i in I} LS[i]*Y[i])*CostoManod #prezzo manodopera modifiche
+	; 
 ;
 
 
@@ -78,8 +81,8 @@ subject to ComponentiPUBass{k in ComponentiSpeciali} :
 subject to InizAB: a+b<=sum{t in Tipi} (ND[11,t]);
 
 #calcolo di y
-subject to AA: y>=ND[11, "C"]-a;
-subject to BB: y>=a-ND[11, "C"];
+subject to TempA: y>=ND[11, "C"]-a;
+subject to TempB: y>=a-ND[11, "C"];
 
 #Vincolo sul numero massimo di potenziometri disponibile per le chitarre
 subject to ComponentiPotChit{k in ComponentiSpeciali} :
@@ -95,15 +98,15 @@ subject to ComponentiPotBass{k in ComponentiSpeciali} :
 subject to InizCD: c+d <= sum{t in Tipi} (ND[12,t]);
 
 #calcolo di z
-subject to CC: z>=ND[12, "C"]-c;
-subject to DD: z>=c-ND[12, "C"];
+subject to TempC: z>=ND[12, "C"]-c;
+subject to TempD: z>=c-ND[12, "C"];
 
 #Vincoli su manodopera
-subject to Manod{j in J}:
+subject to Manod{j in J}: #manodopera massima
 	sum{i in I} (L[i,j]*x[i,j]) +v[j] <=
 	LM[j];
 
-subject to ManodMod:
+subject to ManodMod: #manodopera modifiche
 	sum{j in J} v[j] = sum{i in I} LS[i]*Y[i];	
 
 

@@ -12,27 +12,74 @@ option solver cplex; # scelta del motore di ottimizzazione
 solve; # risolve il modello
 
 # visualizza il valore (ottimo) delle variabili
-printf "Risultati dell'esecuzione: \n";
-printf "STABILIMENTO A \n";
+printf "Risultati dell'esecuzione: \n \n";
+printf "================================ \n";
+printf "VISUALIZZAZIONE PER STABILIMENTI \n";
+printf "================================ \n";
+
+printf "Stabilimento A \n";
 for {i in I} {
-	printf "Strumento %i :", i;
-	display x[i, A];
+	printf "Strumento %i : %i", i, x[i,"A"];
 	printf "\n";
 }
 
-printf "STABILIMENTO B \n";
+printf "Stabilimento B \n";
 for {i in I} {
-	printf "Strumento %i :", i;
-	display x[i, B];
+	printf "Strumento %i : %i", i, x[i, "B"];
 	printf "\n";
 }
 
-printf "STABILIMENTO C \n";
+printf "Stabilimento C \n";
 for {i in I} {
-	printf "Strumento %i :", i;
-	display x[i, C];
+	printf "Strumento %i : %i", i, x[i, "C"];
 	printf "\n";
 }
 
-printf "Ricavo massimo azienda = ";
-display RicavoMassimo;
+printf "\n";
+printf "============================= \n";
+printf "VISUALIZZAZIONE PER STRUMENTI \n";
+printf "============================= \n";
+
+printf "Strumento 1 \n";
+for {j in J} {
+	printf "Stabilimento %c: %i \n" , j, x[1, j];
+}
+
+printf "Strumento 2 \n";
+for {j in J} {
+	printf "Stabilimento %c: %i \n" , j, x[2, j];
+}
+
+printf "Strumento 3 \n";
+for {j in J} {
+	printf "Stabilimento %c: %i \n" , j, x[3, j];
+}
+
+printf "Strumento 4 \n";
+for {j in J} {
+	printf "Stabilimento %c: %i \n" , j, x[4, j];
+}
+
+printf "Strumento 5 \n";
+for {j in J} {
+	printf "Stabilimento %c: %i \n" , j, x[5, j];
+}
+
+printf "Strumento 6 \n";
+for {j in J} {
+	printf "Stabilimento %c: %i \n" , j, x[6, j];
+}
+
+printf "\n";
+printf "========== \n";
+printf "ALTRI DATI \n";
+printf "========== \n";
+
+for {j in J} {
+	printf "Ore modifica stabilimento %i: %.2f \n", j, v[j];
+}
+
+printf "Numero di adattatori utilizzati: %i \n" , y;
+printf "Numero di moulatori utilizzati: %i \n \n", z;
+
+printf "Ricavo massimo azienda = %i \n", RicavoMassimo;
