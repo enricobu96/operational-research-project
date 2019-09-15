@@ -4,7 +4,7 @@
 Prima di procedere con la modellazione e la risoluzione del problema, si è provveduto a definire \textbf{insiemi}, \textbf{parametri} e \textbf{variabili decisionali}.
 \paragraph*{Insiemi}
 \begin{itemize}
-\item[] \textbf{I} = \{1..6\} = tipi di strumenti. Gli indici sono numerici per questioni di leggibilità del modello e del successivo codice \textit{ampl}. Essi corrispondono a:
+\item[] \textbf{I} = \{1..6\} = tipi di strumenti. Gli indici sono numerici per questioni di leggibilità del modello e del successivo codice \textit{AMPL}. Essi corrispondono a:
 \begin{enumerate}
 \item LP;
 \item Strato;
@@ -14,7 +14,7 @@ Prima di procedere con la modellazione e la risoluzione del problema, si è prov
 \item Thunderbird.
 \end{enumerate}
 \item[] \textbf{J} = \{A, B, C\} = stabilimenti di produzione degli strumenti. 
-\item[] \textbf{K} = \{1..14\} = componenti degli strumenti. Anche in questo caso per questioni di leggibilità è stato assegnato a un numero a un componente nel modo seguente:
+\item[] \textbf{K} = \{1..14\} = componenti degli strumenti. Anche in questo caso per questioni di leggibilità è stato assegnato un numero a ogni componente nel modo seguente:
 \begin{enumerate}
 \item chiavette;
 \item capotasto;
@@ -32,8 +32,8 @@ Prima di procedere con la modellazione e la risoluzione del problema, si è prov
 \item truss-rod.
 \end{enumerate}
 \item[] \textbf{Tipi} = \{C, B\} = tipologia di strumento, cioè [C]hitarre e [B]assi. Questo insieme non è fondamentale, ma risulta utile per la successiva definizione dei parametri.
-\item[] \textbf{Chitarre} = \{1..4\} = sottoinsieme di I, anche questo non indispensabile ma utile per la semantica di parametri e modello del problema.
-\item[] \textbf{ComponentiSpeciali} = {11, 12} = sottoinsieme di K, utile (ma non fondamentale) per la modellazione di alcuni vincoli del modello.
+\item[] \textbf{Chitarre} = \{1..4\} = sottoinsieme di I, anche questo non indispensabile ma utile per la semantica dei parametri e del modello del problema.
+\item[] \textbf{ComponentiSpeciali} = \{11, 12\} = sottoinsieme di K, utile (ma non fondamentale) per la modellazione di alcuni vincoli del modello.
 \end{itemize}
 
 \paragraph*{Parametri}
@@ -46,7 +46,7 @@ Prima di procedere con la modellazione e la risoluzione del problema, si è prov
 \item[] $ND_{k,t}$ = Numero di componenti di tipo \textit{k $\in$ K} disponibili per strumento di tipo \textit{t $\in$ Tipi}
 \item[] $NN_{k,i}$ = Numero di componenti di tipo \textit{k $\in$ K} necessarie per la costruzione di uno strumento di tipo \textit{i $\in$ I}
 \item[] $NP_{k,i}$ = Prezzo del componente \textit{k $\in$ K} per lo strumento \textit{i $\in$ I}. È stato optata questa soluzione (\textit{i $\in$ I} al posto di \textit{t $\in$ Tipi}) per una più semplice modellazione
-\item[] $C_i$ = Costo all'azienda dello strumento di tipo \textit{i $\in$ I}; definito come $\sum_{k\in K} NP_{k,i}*NN_{k,i} \forall i\in I$
+\item[] $C_i$ = Costo all'azienda dello strumento di tipo \textit{i $\in$ I}; definito come \\ $\sum_{k\in K} NP_{k,i}*NN_{k,i} \forall i\in I$
 \item[] $LM_j$ = Numero di ore di manodopera massime dello stabilimento \textit{j $\in$ J}
 \item[] $L_{i,j}$ = Numero di ore di manodopera necessarie per produrre uno strumento \textit{i $\in$ I} nello stabilimento \textit{j $\in$ J}
 \item[] \textit{Manod} = Costante che indica il costo della manodopera (\euro /ora)
@@ -57,7 +57,7 @@ Prima di procedere con la modellazione e la risoluzione del problema, si è prov
 \item[] $x_{i,j}$ = Numero di strumenti di tipo \textit{i $\in$ I} prodotti nello stabilimento \textit{j $\in$ J}
 \item[] y = Numero di adattatori per selettori Pick-Up utilizzati
 \item[] z = Numero di modulatori per potenziometri utilizzati
-\item[] $v_j$ = Ore di manodopera per la modifica degli strumenti nello stabilimento \textit{j $\in$ J}
+\item[] $v_j$ = Ore di manodopera per la modifica degli strumenti nello stabilimento \\ \textit{j $\in$ J}
 \end{itemize}
 Oltre a queste, sono state definite altre quattro variabili temporanee con il solo scopo di calcolare y e z mantenendo la linearità del modello; esse sono \textit{a, b, c, d}.
 
@@ -145,18 +145,16 @@ Essendo questo un problema di tipo \textit{mix ottimo di produzione}, si richied
 
 \subsubsection{Spiegazione dei vincoli}
 \begin{itemize}
-\item[(1)] 
-\item[(2)] 
-\item[(3)] 
-\item[(4)] 
-\item[(5)] 
-\item[(6)] 
-\item[(7)] 
-\item[(8)] 
-\item[(9)] 
-\item[(10)] 
-\item[(11)] 
-\item[(12)] 
-\item[(13)] 
-\item[(14)] 
+\item[(1)] Il primo vincolo riguarda la quantità di componenti per chitarra disponibili; la somma dei componenti di tutte le chitarre prodotte deve essere minore o uguale al numero massimo di componenti acquistabili dall'azienda. Da questo vincolo sono esclusi i selettori pick-up e i potenziometri, per i quali sono stati definiti vincoli aggiuntivi;
+\item[(2)] Analogo al primo vincolo ma per i bassi. Anche in questo caso sono esclusi selettori pick-up e potenziometri;
+\item[(3)] Vincolo sul numero massimo di selettori pick-up disponibili per le chitarre. Insieme al vincolo \textbf{4} determina il numero di adattatori e di modulatori da utilizzare;
+\item[(4)] Analogo al vincolo precedente ma per i bassi;
+\item[(5)] Vincolo sulle variabili temporanee \textit{a} e \textit{b}: la somma dei due deve essere al più uguale al numero di selettori pick-up disponibili per chitarre e bassi;
+\item[(6-7)] Questi vincoli hanno il solo scopo di calcolare \textit{y}, il quale è un valore assoluto;
+\item[(8)] Analogo al vincolo \textbf{3} ma per i potenziometri;
+\item[(9)] Analogo al vincolo \textbf{8} ma per i bassi;
+\item[(10)] Analogo al vincolo \textbf{5} ma per \textbf{b} e \textbf{c};
+\item[(11-12)] Analoghi ai vincoli \textbf{6-7} ma per calcolare \textit{z}
+\item[(13)] Vincolo riguardante la manodopera massima a disposizione per ogni stabilimento;
+\item[(14)] Vincolo riguardante la manodopera a disposizione per la modifica degli strumenti in ogni stabilimento.
 \end{itemize}

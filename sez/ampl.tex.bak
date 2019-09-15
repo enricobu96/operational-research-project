@@ -12,8 +12,139 @@ Sono stati realizzati cinque files, i quali sono:
 \end{itemize}
 
 \subsection{Risultati}
+Dopo la modellazione in AMPL, è stato eseguito il solver \textit{cplex} per il calcolo del profitto massimo dell'azienda e la miglior distribuzione della produzione dei vari strumenti tra gli stabilimenti. Di seguito è riportato l'output dell'esecuzione.
+\begin{verbatim}
+Risultati dell'esecuzione: 
+ 
+================================ 
+VISUALIZZAZIONE PER STABILIMENTI 
+================================ 
+Stabilimento A 
+Strumento 1 : 849
+Strumento 2 : 5093
+Strumento 3 : 2082
+Strumento 4 : 0
+Strumento 5 : 1
+Strumento 6 : 0
+Stabilimento B 
+Strumento 1 : 0
+Strumento 2 : 1
+Strumento 3 : 2232
+Strumento 4 : 0
+Strumento 5 : 0
+Strumento 6 : 92
+Stabilimento C 
+Strumento 1 : 0
+Strumento 2 : 0
+Strumento 3 : 0
+Strumento 4 : 0
+Strumento 5 : 10912
+Strumento 6 : 0
 
-risultati
-commenti sui risultati
-seconda esecuzione con diverso set di dati
-commenti
+============================= 
+VISUALIZZAZIONE PER STRUMENTI 
+============================= 
+Strumento 1 
+Stabilimento A: 849 
+Stabilimento B: 0 
+Stabilimento C: 0 
+Strumento 2 
+Stabilimento A: 5093 
+Stabilimento B: 1 
+Stabilimento C: 0 
+Strumento 3 
+Stabilimento A: 2082 
+Stabilimento B: 2232 
+Stabilimento C: 0 
+Strumento 4 
+Stabilimento A: 0 
+Stabilimento B: 0 
+Stabilimento C: 0 
+Strumento 5 
+Stabilimento A: 1 
+Stabilimento B: 0 
+Stabilimento C: 10912 
+Strumento 6 
+Stabilimento A: 0 
+Stabilimento B: 92 
+Stabilimento C: 0 
+
+========== 
+ALTRI DATI 
+========== 
+Ore modifica stabilimento 0: 0.00 
+Ore modifica stabilimento 0: 22.50 
+Ore modifica stabilimento 0: 0.00 
+Numero di adattatori utilizzati: 0 
+Numero di moulatori utilizzati: 0 
+ 
+Ricavo massimo azienda = 1801504 
+\end{verbatim}
+Come si può evincere dai dati, la produzione dello strumento 4 non conviene all'azienda; per essa è preferibile investire il materiale e la manodopera sugli altri strumenti. \\
+Durante le prove di esecuzione del programma è emersa una criticità riguardante lo strumento 4: la sua produzione infatti non conviene all'azienda se il prezzo di vendita sta sotto una determinata soglia; superata questa, la produzione diventa estremamente redditizia e vantaggiosa. Dal secondo set di dati, infatti, si può evincere che già aumentando di 10\euro il prezzo di vendita dello strumento in questione, i risultati cambiano completamente: da 0 strumenti 4 prodotti, infatti, si passa a 919. Aumentando ulteriormente il prezzo di vendita, il risultato dell'esecuzione tende sempre di più a favoreggiare la sua produzione. Per completezza viene riportato il risultato dell'esecuzione con il secondo set di dati.
+\begin{verbatim}
+
+================================ 
+VISUALIZZAZIONE PER STABILIMENTI 
+================================ 
+Stabilimento A 
+Strumento 1 : 1
+Strumento 2 : 3
+Strumento 3 : 6663
+Strumento 4 : 0
+Strumento 5 : 0
+Strumento 6 : 0
+Stabilimento B 
+Strumento 1 : 0
+Strumento 2 : 3
+Strumento 3 : 1678
+Strumento 4 : 919
+Strumento 5 : 0
+Strumento 6 : 92
+Stabilimento C 
+Strumento 1 : 0
+Strumento 2 : 0
+Strumento 3 : 0
+Strumento 4 : 0
+Strumento 5 : 10913
+Strumento 6 : 0
+
+============================= 
+VISUALIZZAZIONE PER STRUMENTI 
+============================= 
+Strumento 1 
+Stabilimento A: 1 
+Stabilimento B: 0 
+Stabilimento C: 0 
+Strumento 2 
+Stabilimento A: 3 
+Stabilimento B: 3 
+Stabilimento C: 0 
+Strumento 3 
+Stabilimento A: 6663 
+Stabilimento B: 1678 
+Stabilimento C: 0 
+Strumento 4 
+Stabilimento A: 0 
+Stabilimento B: 919 
+Stabilimento C: 0 
+Strumento 5 
+Stabilimento A: 0 
+Stabilimento B: 0 
+Stabilimento C: 10913 
+Strumento 6 
+Stabilimento A: 0 
+Stabilimento B: 92 
+Stabilimento C: 0 
+
+========== 
+ALTRI DATI 
+========== 
+Ore modifica stabilimento 0: 0.00 
+Ore modifica stabilimento 0: 22.50 
+Ore modifica stabilimento 0: 0.00 
+Numero di adattatori utilizzati: 0 
+Numero di moulatori utilizzati: 0 
+ 
+Ricavo massimo azienda = 1803288 
+\end{verbatim}

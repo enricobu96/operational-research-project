@@ -4,7 +4,7 @@
 Prima di procedere con la modellazione e la risoluzione del problema, si è provveduto a definire \textbf{insiemi}, \textbf{parametri} e \textbf{variabili decisionali}.
 \paragraph*{Insiemi}
 \begin{itemize}
-\item[] \textbf{I} = \{1..6\} = tipi di strumenti. Gli indici sono numerici per questioni di leggibilità del modello e del successivo codice \textit{ampl}. Essi corrispondono a:
+\item[] \textbf{I} = \{1..6\} = tipi di strumenti. Gli indici sono numerici per questioni di leggibilità del modello e del successivo codice \textit{AMPL}. Essi corrispondono a:
 \begin{enumerate}
 \item LP;
 \item Strato;
@@ -14,7 +14,7 @@ Prima di procedere con la modellazione e la risoluzione del problema, si è prov
 \item Thunderbird.
 \end{enumerate}
 \item[] \textbf{J} = \{A, B, C\} = stabilimenti di produzione degli strumenti. 
-\item[] \textbf{K} = \{1..14\} = componenti degli strumenti. Anche in questo caso per questioni di leggibilità è stato assegnato a un numero a un componente nel modo seguente:
+\item[] \textbf{K} = \{1..14\} = componenti degli strumenti. Anche in questo caso per questioni di leggibilità è stato assegnato un numero a ogni componente nel modo seguente:
 \begin{enumerate}
 \item chiavette;
 \item capotasto;
@@ -144,3 +144,17 @@ Essendo questo un problema di tipo \textit{mix ottimo di produzione}, si richied
 
 
 \subsubsection{Spiegazione dei vincoli}
+\begin{itemize}
+\item[(1)] Il primo vincolo riguarda la quantità di componenti per chitarra disponibili; la somma dei componenti di tutte le chitarre prodotte deve essere minore o uguale al numero massimo di componenti acquistabili dall'azienda. Da questo vincolo sono esclusi i selettori pick-up e i potenziometri, per i quali sono stati definiti vincoli aggiuntivi;
+\item[(2)] Analogo al primo vincolo ma per i bassi. Anche in questo caso sono esclusi selettori pick-up e potenziometri;
+\item[(3)] Vincolo sul numero massimo di selettori pick-up disponibili per le chitarre. Insieme al vincolo \textbf{4} determina il numero di adattatori e di modulatori da utilizzare;
+\item[(4)] Analogo al vincolo precedente ma per i bassi;
+\item[(5)] Vincolo sulle variabili temporanee \textbf{a} e \textbf{b}: la somma dei due deve essere al più uguale al numero di selettori pick-up disponibili per chitarre e bassi;
+\item[(6-7)] Questi vincoli hanno il solo scopo di calcolare \textbf{y}, il quale è un valore assoluto;
+\item[(8)] Analogo al vincolo \textbf{3} ma per i potenziometri;
+\item[(9)] Analogo al vincolo \textbf{8} ma per i bassi;
+\item[(10)] Analogo al vincolo \textbf{5} ma per \textbf{b} e \textbf{c};
+\item[(11-12)] Analoghi ai vincoli \textbf{6-7} ma per calcolare \textbf{z}
+\item[(13)] Vincolo riguardante la manodopera massima a disposizione per ogni stabilimento;
+\item[(14)] Vincolo riguardante la manodopera a disposizione per la modifica degli strumenti in ogni stabilimento.
+\end{itemize}
